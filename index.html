@@ -12,32 +12,28 @@ body{background:#0A0A0F;color:#F0EEF8;font-family:'Inter',sans-serif;min-height:
 .logo{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:#F0EEF8}
 .logo span{color:#8B5CF6}
 .nav-btns{display:flex;gap:8px}
-.nav-btn{background:none;border:1px solid #1E1C2E;border-radius:8px;padding:8px 18px;color:#7B7893;font-size:13px;cursor:pointer;transition:all .15s}
-.nav-btn:hover{border-color:#8B5CF6;color:#C4B5FD}
+.nav-btn{background:none;border:1px solid #1E1C2E;border-radius:8px;padding:8px 18px;color:#7B7893;font-size:13px;cursor:pointer}
 .nav-btn.primary{background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;color:white}
 .hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:80px 24px 48px}
 .badge{display:inline-flex;align-items:center;gap:8px;font-family:'Syne',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8B5CF6;border:1px solid #8B5CF630;padding:6px 14px;border-radius:20px;margin-bottom:28px;background:#8B5CF610}
 .pulse{width:7px;height:7px;border-radius:50%;background:#8B5CF6;animation:pulse 2s ease-in-out infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 h1{font-family:'Syne',sans-serif;font-size:clamp(36px,6vw,70px);font-weight:800;line-height:1.0;letter-spacing:-.03em;margin-bottom:22px;max-width:800px}
 .grad{background:linear-gradient(135deg,#8B5CF6,#EC4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-sub{font-size:17px;color:#7B7893;line-height:1.65;max-width:500px;margin-bottom:44px}
-.hero-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:60px}
-.btn-trial{padding:16px 32px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:14px;font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:white;cursor:pointer;transition:opacity .2s}
-.btn-trial:hover{opacity:.9}
-.btn-code{padding:16px 32px;background:none;border:1px solid #2A2840;border-radius:14px;font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:#7B7893;cursor:pointer;transition:all .2s}
-.btn-code:hover{border-color:#8B5CF6;color:#C4B5FD}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:48px}
+.btn-trial{padding:16px 32px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:14px;font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:white;cursor:pointer}
+.btn-code{padding:16px 32px;background:none;border:1px solid #2A2840;border-radius:14px;font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:#7B7893;cursor:pointer}
 .pricing-card{background:#12111A;border:1px solid #2A2840;border-radius:24px;padding:40px;max-width:420px;width:100%;margin-bottom:36px;position:relative;overflow:hidden}
 .pricing-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#8B5CF6,#EC4899)}
 .price-row{display:flex;align-items:flex-end;gap:4px;margin-bottom:6px;justify-content:center}
-.price-amount{font-family:'Syne',sans-serif;font-size:56px;font-weight:800;color:#F0EEF8;line-height:1;letter-spacing:-.03em}
+.price-amount{font-family:'Syne',sans-serif;font-size:56px;font-weight:800;color:#F0EEF8;line-height:1}
 .price-currency{font-family:'Syne',sans-serif;font-size:24px;font-weight:700;color:#8B5CF6;margin-bottom:10px}
 .price-period{font-size:14px;color:#5C5A72;margin-bottom:28px;text-align:center}
 .feat-list{list-style:none;margin-bottom:28px;display:flex;flex-direction:column;gap:12px;text-align:left}
 .feat-list li{display:flex;align-items:center;gap:10px;font-size:14px;color:#D4D0E8}
 .check{width:20px;height:20px;border-radius:50%;background:#8B5CF620;border:1px solid #8B5CF640;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:11px;color:#A78BFA}
-.pay-btn{width:100%;padding:18px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:14px;font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:white;cursor:pointer;transition:opacity .2s;display:flex;align-items:center;justify-content:center;gap:10px}
-.pay-btn:hover{opacity:.9}
+.pay-btn{width:100%;padding:18px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:14px;font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:white;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px}
 .pay-note{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:12px;font-size:12px;color:#3A3852}
 .feats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:860px;margin:0 auto 60px;padding:0 24px}
 .feat-card{background:#12111A;border:1px solid #1E1C2E;border-radius:16px;padding:24px}
@@ -74,17 +70,16 @@ h1{font-family:'Syne',sans-serif;font-size:clamp(36px,6vw,70px);font-weight:800;
 .gate-btn{padding:13px 20px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:10px;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:white;cursor:pointer;white-space:nowrap}
 .back-btn{background:none;border:none;color:#5C5A72;font-size:13px;cursor:pointer}
 .app-wrap{max-width:860px;margin:0 auto;padding:40px 24px 80px}
-.app-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px}
+.app-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
 .app-logo{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:#F0EEF8}
 .app-logo span{color:#8B5CF6}
-.app-nav-right{display:flex;align-items:center;gap:12px}
-.trial-badge{background:#8B5CF620;border:1px solid #8B5CF640;border-radius:20px;padding:5px 12px;font-size:12px;color:#A78BFA;font-family:'Syne',sans-serif;font-weight:600}
-.upgrade-btn{padding:8px 16px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:8px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;color:white;cursor:pointer}
+.app-nav-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.credits-bar{background:#12111A;border:1px solid #1E1C2E;border-radius:20px;padding:6px 14px;font-size:12px;color:#A78BFA;font-family:'Syne',sans-serif;font-weight:600}
+.upgrade-btn-sm{padding:8px 16px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:8px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;color:white;cursor:pointer}
 .logout{background:none;border:1px solid #1E1C2E;border-radius:8px;padding:7px 16px;color:#5C5A72;font-size:12px;cursor:pointer}
 .tools-tabs{display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap}
 .tool-tab{padding:10px 20px;border-radius:10px;border:1px solid #1E1C2E;background:#0A0A0F;color:#7B7893;font-size:13px;font-family:'Syne',sans-serif;font-weight:600;cursor:pointer;transition:all .15s}
 .tool-tab.on{background:#8B5CF620;border-color:#8B5CF6;color:#C4B5FD}
-.tool-tab.locked{opacity:.5;cursor:not-allowed}
 .tool-panel{display:none}
 .tool-panel.on{display:block}
 .panel-title{font-family:'Syne',sans-serif;font-size:clamp(24px,4vw,36px);font-weight:800;line-height:1.05;letter-spacing:-.02em;margin-bottom:8px}
@@ -103,8 +98,7 @@ h1{font-family:'Syne',sans-serif;font-size:clamp(36px,6vw,70px);font-weight:800;
 .tog-group{display:flex;gap:8px;flex-wrap:wrap}
 .tog{padding:8px 16px;border-radius:8px;border:1px solid #1E1C2E;background:#0A0A0F;color:#7B7893;font-size:13px;cursor:pointer;transition:all .15s}
 .tog.on{background:#8B5CF620;border-color:#8B5CF6;color:#C4B5FD}
-.gen-btn{width:100%;padding:16px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:12px;font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:white;cursor:pointer;transition:opacity .2s;margin-top:8px}
-.gen-btn:hover:not(:disabled){opacity:.9}
+.gen-btn{width:100%;padding:16px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:12px;font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:white;cursor:pointer;margin-top:8px}
 .gen-btn:disabled{opacity:.45;cursor:not-allowed}
 .loading{display:flex;align-items:center;gap:12px;justify-content:center;padding:48px;color:#7B7893;font-size:14px}
 .spinner{width:20px;height:20px;border:2px solid #1E1C2E;border-top-color:#8B5CF6;border-radius:50%;animation:spin .8s linear infinite}
@@ -133,7 +127,7 @@ h1{font-family:'Syne',sans-serif;font-size:clamp(36px,6vw,70px);font-weight:800;
 .copy-row{display:flex;justify-content:flex-end;margin-top:18px}
 .copy-btn{background:none;border:1px solid #1E1C2E;border-radius:8px;padding:7px 16px;color:#5C5A72;font-size:12px;cursor:pointer}
 .copy-btn.done{color:#4ADE80;border-color:#4ADE8040}
-.upgrade-wall{background:linear-gradient(135deg,#12111A,#1A1028);border:1px solid #8B5CF640;border-radius:16px;padding:32px;text-align:center;margin-top:16px}
+.upgrade-wall{background:linear-gradient(135deg,#12111A,#1A1028);border:1px solid #8B5CF640;border-radius:16px;padding:32px;text-align:center;margin-top:20px}
 .upgrade-wall-icon{font-size:40px;margin-bottom:16px}
 .upgrade-wall-title{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:#F0EEF8;margin-bottom:8px}
 .upgrade-wall-sub{font-size:14px;color:#7B7893;line-height:1.6;margin-bottom:24px}
@@ -150,30 +144,28 @@ h1{font-family:'Syne',sans-serif;font-size:clamp(36px,6vw,70px);font-weight:800;
     <div class="logo">UGC<span>Studio</span></div>
     <div class="nav-btns">
       <button class="nav-btn" onclick="show('gate')">J'ai un code</button>
-      <button class="nav-btn primary" onclick="document.getElementById('pay-modal').classList.remove('hidden')">S'abonner</button>
+      <button class="nav-btn primary" onclick="openPay()">S'abonner</button>
     </div>
   </nav>
   <div class="hero">
     <div class="badge"><span class="pulse"></span>Propulsé par IA</div>
     <h1>Scripts, cibles & emails<br>en <span class="grad">30 secondes</span></h1>
-    <p class="hero-sub">Essaie gratuitement — génère 1 script UGC sans créer de compte. Abonne-toi pour un accès illimité.</p>
+    <p class="hero-sub">Essaie gratuitement — 2 générations offertes sur chaque outil. Aucun compte requis.</p>
     <div class="hero-btns">
       <button class="btn-trial" onclick="startTrial()">🎁 Essayer gratuitement</button>
-      <button class="btn-code" onclick="show('gate')">J'ai déjà un code →</button>
+      <button class="btn-code" onclick="show('gate')">J'ai un code →</button>
     </div>
     <div class="pricing-card">
       <div class="price-row"><div class="price-currency">€</div><div class="price-amount">5</div></div>
-      <div class="price-period">par mois · sans engagement · résiliable à tout moment</div>
+      <div class="price-period">par mois · sans engagement</div>
       <ul class="feat-list">
         <li><span class="check">✓</span>Scripts UGC illimités</li>
-        <li><span class="check">✓</span>Analyse de cible complète</li>
-        <li><span class="check">✓</span>Emails de prospection B2B</li>
+        <li><span class="check">✓</span>Analyse de cible illimitée</li>
+        <li><span class="check">✓</span>Emails B2B illimités</li>
         <li><span class="check">✓</span>Prompts Runway ML & Kling AI</li>
         <li><span class="check">✓</span>Accès immédiat après paiement</li>
       </ul>
-      <button class="pay-btn" onclick="document.getElementById('pay-modal').classList.remove('hidden')">
-        💳 S'abonner — 3 280 FCFA/mois
-      </button>
+      <button class="pay-btn" onclick="openPay()">💳 S'abonner — 3 280 FCFA/mois</button>
       <div class="pay-note">🔒 PayDunya · Flooz · T-Money · Carte CB</div>
     </div>
   </div>
@@ -235,12 +227,23 @@ h1{font-family:'Syne',sans-serif;font-size:clamp(36px,6vw,70px);font-weight:800;
     <div class="app-nav">
       <div class="app-logo">UGC<span>Studio</span></div>
       <div class="app-nav-right">
-        <span id="trial-badge" class="trial-badge hidden">🎁 Essai — 1 génération</span>
-        <button id="upgrade-btn" class="upgrade-btn hidden" onclick="document.getElementById('pay-modal').classList.remove('hidden')">S'abonner 5€/mois</button>
+        <span id="credits-bar" class="credits-bar hidden"></span>
+        <button id="upgrade-btn-sm" class="upgrade-btn-sm hidden" onclick="openPay()">🔓 S'abonner — 5€/mois</button>
         <button class="logout" onclick="logout()">Quitter</button>
       </div>
     </div>
 
     <div class="tools-tabs">
       <button class="tool-tab on" onclick="switchTool('scripts',this)">🎬 Scripts UGC</button>
-      <button class="tool-tab" id="tab-cible" oncl
+      <button class="tool-tab" onclick="switchTool('cible',this)">🎯 Analyse de cible</button>
+      <button class="tool-tab" onclick="switchTool('email',this)">📧 Email B2B</button>
+    </div>
+
+    <!-- SCRIPTS -->
+    <div id="panel-scripts" class="tool-panel on">
+      <div class="panel-title">Génère ton<br><span>script vidéo</span></div>
+      <p class="panel-sub">2 variantes A/B avec hook, B-roll, voix off, CTA et prompt Runway ML.</p>
+      <div class="form-card">
+        <div class="form-grid">
+          <div class="fg full"><label>Produit / Marque *</label><input id="s-produit" placeholder="ex: Parfum Rose Noir, Restaurant Chez Momo…"></div>
+          <div class="fg"><label>Sect
