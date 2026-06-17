@@ -5,263 +5,254 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google" content="notranslate">
 <title>UGC Studio</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#0A0A0F;color:#F0EEF8;font-family:'Inter',sans-serif;min-height:100vh}
 .hidden{display:none!important}
-/* NAV */
-.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;border-bottom:1px solid #1E1C2E}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-bottom:1px solid #1E1C2E}
 .logo{font-family:'Syne',sans-serif;font-size:18px;font-weight:800}
 .logo span{color:#8B5CF6}
-.nav-btns{display:flex;gap:8px}
-.nbtn{padding:9px 18px;border-radius:8px;font-family:'Syne',sans-serif;font-size:13px;font-weight:600;cursor:pointer;border:1px solid #1E1C2E;background:none;color:#7B7893}
-.nbtn.pur{background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;color:#fff}
-/* HERO */
-.hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:60px 24px 40px}
-.badge{display:inline-flex;align-items:center;gap:8px;font-family:'Syne',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8B5CF6;border:1px solid #8B5CF630;padding:6px 14px;border-radius:20px;margin-bottom:24px;background:#8B5CF610}
+.nbtn{padding:9px 16px;border-radius:8px;font-family:'Syne',sans-serif;font-size:13px;font-weight:700;cursor:pointer;border:1px solid #1E1C2E;background:none;color:#7B7893}
+.nbtn.p{background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;color:#fff}
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:56px 20px 36px}
+.badge{display:inline-flex;align-items:center;gap:8px;font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8B5CF6;border:1px solid #8B5CF630;padding:6px 14px;border-radius:20px;margin-bottom:22px;background:#8B5CF610}
 .pulse{width:7px;height:7px;border-radius:50%;background:#8B5CF6;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-.hero h1{font-family:'Syne',sans-serif;font-size:clamp(32px,8vw,64px);font-weight:800;line-height:1.0;letter-spacing:-.03em;margin-bottom:20px}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-family:'Syne',sans-serif;font-size:clamp(30px,9vw,60px);font-weight:800;line-height:1.05;letter-spacing:-.02em;margin-bottom:18px}
 .grad{background:linear-gradient(135deg,#8B5CF6,#EC4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero p{font-size:16px;color:#7B7893;line-height:1.65;max-width:480px;margin-bottom:36px}
-.hero-btns{display:flex;flex-direction:column;gap:12px;width:100%;max-width:360px;margin-bottom:48px}
-.big-btn{padding:18px 24px;border-radius:14px;font-family:'Syne',sans-serif;font-size:16px;font-weight:700;cursor:pointer;border:none;width:100%}
-.big-btn.pur{background:linear-gradient(135deg,#8B5CF6,#7C3AED);color:#fff}
-.big-btn.ghost{background:none;border:1px solid #2A2840;color:#7B7893}
-/* PRICING */
-.pcard{background:#12111A;border:1px solid #2A2840;border-radius:20px;padding:32px 24px;max-width:400px;width:100%;position:relative;overflow:hidden;margin-bottom:48px}
+.hero p{font-size:15px;color:#7B7893;line-height:1.6;max-width:420px;margin-bottom:32px}
+.bbtn{width:100%;max-width:360px;padding:17px 20px;border-radius:13px;font-family:'Syne',sans-serif;font-size:15px;font-weight:700;cursor:pointer;border:none;margin-bottom:10px;display:block}
+.bbtn.p{background:linear-gradient(135deg,#8B5CF6,#7C3AED);color:#fff}
+.bbtn.g{background:none;border:1px solid #2A2840;color:#7B7893}
+.pcard{background:#12111A;border:1px solid #2A2840;border-radius:18px;padding:28px 20px;max-width:380px;width:100%;position:relative;overflow:hidden;margin:24px 0 40px}
 .pcard::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#8B5CF6,#EC4899)}
-.price{font-family:'Syne',sans-serif;font-size:52px;font-weight:800;color:#F0EEF8;line-height:1}
-.price-cur{font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:#8B5CF6;vertical-align:super;font-size:18px}
-.period{font-size:13px;color:#5C5A72;margin:6px 0 24px;text-align:center}
-.flist{list-style:none;margin-bottom:24px;display:flex;flex-direction:column;gap:10px;text-align:left}
-.flist li{display:flex;align-items:center;gap:10px;font-size:14px;color:#D4D0E8}
-.fcheck{width:20px;height:20px;border-radius:50%;background:#8B5CF620;border:1px solid #8B5CF640;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:10px;color:#A78BFA}
-.sub-btn{width:100%;padding:16px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:12px;font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:#fff;cursor:pointer}
-.pay-note{font-size:12px;color:#3A3852;text-align:center;margin-top:10px}
-/* FEATS */
-.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:840px;width:100%;margin:0 auto 48px;padding:0 24px}
-.fc{background:#12111A;border:1px solid #1E1C2E;border-radius:14px;padding:20px}
-.fc-icon{font-size:22px;margin-bottom:10px}
-.fc-title{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#F0EEF8;margin-bottom:6px}
-.fc-desc{font-size:12px;color:#7B7893;line-height:1.5}
-/* MODAL */
-.overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;z-index:999;padding:20px}
-.modal{background:#12111A;border:1px solid #2A2840;border-radius:20px;padding:32px 24px;max-width:400px;width:100%;position:relative;max-height:90vh;overflow-y:auto}
-.modal h2{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:#F0EEF8;margin-bottom:6px}
-.modal-sub{font-size:13px;color:#7B7893;margin-bottom:20px}
-.close{position:absolute;top:14px;right:18px;background:none;border:none;color:#5C5A72;font-size:22px;cursor:pointer;line-height:1}
-.fg{display:flex;flex-direction:column;gap:7px;margin-bottom:14px}
-.fg label{font-family:'Syne',sans-serif;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#5C5A72}
-.fg input{background:#0A0A0F;border:1px solid #1E1C2E;border-radius:10px;padding:12px 14px;font-size:14px;color:#F0EEF8;font-family:'Inter',sans-serif;outline:none;width:100%}
+.prc{text-align:center;margin-bottom:20px}
+.prc .amt{font-family:'Syne',sans-serif;font-size:52px;font-weight:800;color:#F0EEF8;line-height:1}
+.prc .cur{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:#8B5CF6;vertical-align:super}
+.prc .per{font-size:12px;color:#5C5A72;margin-top:4px}
+.fl{list-style:none;margin-bottom:22px;display:flex;flex-direction:column;gap:9px}
+.fl li{display:flex;align-items:center;gap:9px;font-size:13px;color:#D4D0E8}
+.fck{width:19px;height:19px;border-radius:50%;background:#8B5CF620;border:1px solid #8B5CF640;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:10px;color:#A78BFA}
+.sbtn{width:100%;padding:15px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:11px;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#fff;cursor:pointer}
+.pnote{font-size:11px;color:#3A3852;text-align:center;margin-top:8px}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:800px;width:100%;margin:0 auto 40px;padding:0 20px}
+.fc{background:#12111A;border:1px solid #1E1C2E;border-radius:12px;padding:18px}
+.fc-i{font-size:20px;margin-bottom:8px}
+.fc-t{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:#F0EEF8;margin-bottom:5px}
+.fc-d{font-size:12px;color:#7B7893;line-height:1.5}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.88);display:flex;align-items:center;justify-content:center;z-index:999;padding:16px}
+.modal{background:#12111A;border:1px solid #2A2840;border-radius:18px;padding:28px 20px;max-width:380px;width:100%;position:relative;max-height:92vh;overflow-y:auto}
+.modal h2{font-family:'Syne',sans-serif;font-size:19px;font-weight:800;color:#F0EEF8;margin-bottom:5px}
+.msub{font-size:12px;color:#7B7893;margin-bottom:18px}
+.xbtn{position:absolute;top:12px;right:16px;background:none;border:none;color:#5C5A72;font-size:24px;cursor:pointer;line-height:1;padding:0}
+.fg{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.fg label{font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5C5A72}
+.fg input{background:#0A0A0F;border:1px solid #1E1C2E;border-radius:9px;padding:11px 13px;font-size:14px;color:#F0EEF8;font-family:'Inter',sans-serif;outline:none;width:100%}
 .fg input:focus{border-color:#8B5CF6}
-.methods{display:flex;gap:8px;margin-bottom:18px}
-.mth{flex:1;padding:10px 6px;border:1px solid #1E1C2E;border-radius:10px;background:#0A0A0F;color:#7B7893;font-size:12px;cursor:pointer;text-align:center;transition:all .15s}
+.meths{display:flex;gap:7px;margin-bottom:16px}
+.mth{flex:1;padding:9px 4px;border:1px solid #1E1C2E;border-radius:9px;background:#0A0A0F;color:#7B7893;font-size:12px;cursor:pointer;text-align:center}
 .mth.on{border-color:#8B5CF6;color:#C4B5FD;background:#8B5CF615}
-.pay-go{width:100%;padding:15px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:12px;font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:#fff;cursor:pointer;margin-top:6px}
-.pay-go:disabled{opacity:.5;cursor:not-allowed}
-.err{background:#1A0A0A;border:1px solid #3A1515;border-radius:8px;padding:10px 14px;color:#F87171;font-size:13px;margin-bottom:12px}
-.suc{text-align:center;padding:16px 0}
-.suc-icon{font-size:44px;margin-bottom:14px}
-.suc-title{font-family:'Syne',sans-serif;font-size:19px;font-weight:800;color:#4ADE80;margin-bottom:8px}
-.suc-sub{font-size:13px;color:#7B7893;line-height:1.6;margin-bottom:20px}
-/* GATE */
-.gate-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
-.gate-card{background:#12111A;border:1px solid #1E1C2E;border-radius:20px;padding:40px 28px;max-width:420px;width:100%;text-align:center}
-.gate-card h2{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;margin-bottom:8px}
-.gate-card p{font-size:14px;color:#7B7893;line-height:1.6;margin-bottom:20px}
-.gate-row{display:flex;gap:8px;margin-bottom:16px}
-.gate-inp{flex:1;background:#0A0A0F;border:1px solid #1E1C2E;border-radius:10px;padding:13px 14px;font-size:14px;color:#F0EEF8;font-family:'Inter',sans-serif;outline:none;letter-spacing:.06em;text-transform:uppercase}
-.gate-inp:focus{border-color:#8B5CF6}
-.gate-go{padding:13px 18px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:10px;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#fff;cursor:pointer;white-space:nowrap}
-.link-btn{background:none;border:none;color:#5C5A72;font-size:13px;cursor:pointer;margin-top:4px}
-/* APP */
-.app-wrap{max-width:840px;margin:0 auto;padding:32px 20px 80px}
-.app-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:gap}
-.app-logo{font-family:'Syne',sans-serif;font-size:17px;font-weight:800}
-.app-logo span{color:#8B5CF6}
-.app-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.credits{background:#12111A;border:1px solid #8B5CF640;border-radius:20px;padding:5px 12px;font-size:12px;color:#A78BFA;font-family:'Syne',sans-serif;font-weight:600}
-.up-btn{padding:7px 14px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:8px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;color:#fff;cursor:pointer}
-.quit-btn{background:none;border:1px solid #1E1C2E;border-radius:8px;padding:7px 14px;color:#5C5A72;font-size:12px;cursor:pointer}
-.tabs{display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap}
-.tab{padding:10px 18px;border-radius:10px;border:1px solid #1E1C2E;background:#0A0A0F;color:#7B7893;font-size:13px;font-family:'Syne',sans-serif;font-weight:600;cursor:pointer}
+.pgo{width:100%;padding:14px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:11px;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#fff;cursor:pointer;margin-top:4px}
+.pgo:disabled{opacity:.5;cursor:not-allowed}
+.err{background:#1A0A0A;border:1px solid #3A1515;border-radius:7px;padding:9px 12px;color:#F87171;font-size:12px;margin-bottom:10px}
+.suc{text-align:center;padding:12px 0}
+.suc-i{font-size:40px;margin-bottom:12px}
+.suc-t{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:#4ADE80;margin-bottom:7px}
+.suc-s{font-size:13px;color:#7B7893;line-height:1.6;margin-bottom:18px}
+.gate-w{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.gate-c{background:#12111A;border:1px solid #1E1C2E;border-radius:18px;padding:36px 22px;max-width:400px;width:100%;text-align:center}
+.gate-c h2{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;margin-bottom:7px}
+.gate-c p{font-size:13px;color:#7B7893;line-height:1.6;margin-bottom:18px}
+.grow{display:flex;gap:8px;margin-bottom:14px}
+.ginp{flex:1;background:#0A0A0F;border:1px solid #1E1C2E;border-radius:9px;padding:12px 13px;font-size:14px;color:#F0EEF8;font-family:'Inter',sans-serif;outline:none;letter-spacing:.05em;text-transform:uppercase}
+.ginp:focus{border-color:#8B5CF6}
+.ggo{padding:12px 16px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:9px;font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:#fff;cursor:pointer;white-space:nowrap}
+.lbtn{background:none;border:none;color:#5C5A72;font-size:13px;cursor:pointer;margin-top:2px}
+.aw{max-width:800px;margin:0 auto;padding:28px 18px 70px}
+.atop{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;gap:8px;flex-wrap:wrap}
+.alogo{font-family:'Syne',sans-serif;font-size:17px;font-weight:800}
+.alogo span{color:#8B5CF6}
+.aright{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cred{background:#12111A;border:1px solid #8B5CF640;border-radius:18px;padding:5px 11px;font-size:11px;color:#A78BFA;font-family:'Syne',sans-serif;font-weight:700}
+.upbtn{padding:7px 13px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:7px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;color:#fff;cursor:pointer}
+.qbtn{background:none;border:1px solid #1E1C2E;border-radius:7px;padding:7px 13px;color:#5C5A72;font-size:12px;cursor:pointer}
+.tabs{display:flex;gap:7px;margin-bottom:24px;flex-wrap:wrap}
+.tab{padding:9px 16px;border-radius:9px;border:1px solid #1E1C2E;background:#0A0A0F;color:#7B7893;font-size:13px;font-family:'Syne',sans-serif;font-weight:700;cursor:pointer}
 .tab.on{background:#8B5CF620;border-color:#8B5CF6;color:#C4B5FD}
 .panel{display:none}
 .panel.on{display:block}
-.ptitle{font-family:'Syne',sans-serif;font-size:clamp(22px,5vw,34px);font-weight:800;line-height:1.1;margin-bottom:8px}
-.ptitle span{background:linear-gradient(135deg,#8B5CF6,#EC4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.psub{font-size:14px;color:#7B7893;line-height:1.6;margin-bottom:24px}
-.fcard{background:#12111A;border:1px solid #1E1C2E;border-radius:14px;padding:28px;margin-bottom:20px}
-.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
-.fi{display:flex;flex-direction:column;gap:7px}
+.pt{font-family:'Syne',sans-serif;font-size:clamp(20px,5vw,30px);font-weight:800;line-height:1.1;margin-bottom:7px}
+.pt span{background:linear-gradient(135deg,#8B5CF6,#EC4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.ps{font-size:13px;color:#7B7893;line-height:1.6;margin-bottom:20px}
+.fcard{background:#12111A;border:1px solid #1E1C2E;border-radius:13px;padding:22px;margin-bottom:16px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:13px}
+.fi{display:flex;flex-direction:column;gap:6px}
 .fi.full{grid-column:1/-1}
-.fi label{font-family:'Syne',sans-serif;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#5C5A72}
-.fi input,.fi select,.fi textarea{background:#0A0A0F;border:1px solid #1E1C2E;border-radius:10px;padding:12px 14px;font-size:14px;color:#F0EEF8;font-family:'Inter',sans-serif;outline:none;width:100%}
+.fi label{font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5C5A72}
+.fi input,.fi select,.fi textarea{background:#0A0A0F;border:1px solid #1E1C2E;border-radius:9px;padding:11px 13px;font-size:13px;color:#F0EEF8;font-family:'Inter',sans-serif;outline:none;width:100%}
 .fi input:focus,.fi select:focus,.fi textarea:focus{border-color:#8B5CF6}
 .fi input::placeholder,.fi textarea::placeholder{color:#3A3852}
 .fi select option{background:#12111A}
-.fi textarea{resize:vertical;min-height:72px}
-.togs{display:flex;gap:8px;flex-wrap:wrap}
-.tog{padding:8px 14px;border-radius:8px;border:1px solid #1E1C2E;background:#0A0A0F;color:#7B7893;font-size:13px;cursor:pointer}
+.fi textarea{resize:vertical;min-height:68px}
+.togs{display:flex;gap:7px;flex-wrap:wrap}
+.tog{padding:7px 13px;border-radius:7px;border:1px solid #1E1C2E;background:#0A0A0F;color:#7B7893;font-size:12px;cursor:pointer}
 .tog.on{background:#8B5CF620;border-color:#8B5CF6;color:#C4B5FD}
-.go-btn{width:100%;padding:15px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:12px;font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:#fff;cursor:pointer;margin-top:8px}
-.go-btn:disabled{opacity:.45;cursor:not-allowed}
-.spin-wrap{display:flex;align-items:center;gap:12px;justify-content:center;padding:40px;color:#7B7893;font-size:14px}
-.spin{width:20px;height:20px;border:2px solid #1E1C2E;border-top-color:#8B5CF6;border-radius:50%;animation:spin .8s linear infinite}
+.gobtn{width:100%;padding:14px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:11px;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#fff;cursor:pointer;margin-top:8px}
+.gobtn:disabled{opacity:.45;cursor:not-allowed}
+.spw{display:flex;align-items:center;gap:11px;justify-content:center;padding:36px;color:#7B7893;font-size:13px}
+.sp{width:19px;height:19px;border:2px solid #1E1C2E;border-top-color:#8B5CF6;border-radius:50%;animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-.rcard{background:#12111A;border:1px solid #1E1C2E;border-radius:14px;padding:24px;margin-top:14px}
-.rtxt{font-size:14px;color:#D4D0E8;line-height:1.8;white-space:pre-wrap}
-.rhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
-.rlbl{font-family:'Syne',sans-serif;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#5C5A72}
-.new-btn{background:none;border:1px solid #1E1C2E;border-radius:8px;padding:6px 12px;color:#7B7893;font-size:12px;cursor:pointer}
-.sc{background:#12111A;border:1px solid #1E1C2E;border-radius:14px;overflow:hidden}
-.stabs{display:flex;border-bottom:1px solid #1E1C2E;padding:0 20px;gap:4px}
-.stab{padding:13px 14px;font-size:13px;font-family:'Syne',sans-serif;font-weight:600;color:#5C5A72;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;border-left:none;border-right:none;border-top:none}
+.rc{background:#12111A;border:1px solid #1E1C2E;border-radius:13px;padding:20px;margin-top:12px}
+.rtxt{font-size:13px;color:#D4D0E8;line-height:1.8;white-space:pre-wrap}
+.rh{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.rl{font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#5C5A72}
+.nbtn2{background:none;border:1px solid #1E1C2E;border-radius:7px;padding:5px 11px;color:#7B7893;font-size:12px;cursor:pointer}
+.sc{background:#12111A;border:1px solid #1E1C2E;border-radius:13px;overflow:hidden}
+.stabs{display:flex;border-bottom:1px solid #1E1C2E;padding:0 18px;gap:3px}
+.stab{padding:12px 13px;font-size:12px;font-family:'Syne',sans-serif;font-weight:700;color:#5C5A72;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;border-left:none;border-right:none;border-top:none}
 .stab.on{color:#C4B5FD;border-bottom-color:#8B5CF6}
-.sbody{padding:24px}
-.vlbl{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:'Syne',sans-serif;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8B5CF6;background:#8B5CF615;border-radius:6px;padding:4px 10px;margin-bottom:18px}
-.dot{width:6px;height:6px;border-radius:50%;background:currentColor}
-.sec{margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid #1A1828}
+.sbody{padding:20px}
+.vl{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-family:'Syne',sans-serif;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8B5CF6;background:#8B5CF615;border-radius:5px;padding:3px 9px;margin-bottom:15px}
+.dt{width:5px;height:5px;border-radius:50%;background:currentColor}
+.sec{margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid #1A1828}
 .sec:last-of-type{border-bottom:none;margin-bottom:0;padding-bottom:0}
-.slbl{font-size:10px;font-family:'Syne',sans-serif;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#3A3852;margin-bottom:6px}
-.hook{font-size:15px;font-weight:500;color:#F0EEF8;line-height:1.55}
-.stxt{font-size:14px;color:#D4D0E8;line-height:1.7;white-space:pre-wrap}
-.ctxt{font-size:14px;font-weight:500;color:#A78BFA;line-height:1.5}
-.rbox{background:#0D0C18;border:1px solid #1E1C2E;border-radius:10px;padding:12px;margin-top:8px}
-.rlbl2{font-size:10px;font-family:'Syne',sans-serif;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#4ADE8060;margin-bottom:6px}
-.rtxtg{font-size:12px;color:#4ADE80;line-height:1.65}
-.copy-row{display:flex;justify-content:flex-end;margin-top:16px}
-.cpbtn{background:none;border:1px solid #1E1C2E;border-radius:8px;padding:7px 14px;color:#5C5A72;font-size:12px;cursor:pointer}
+.sl{font-size:9px;font-family:'Syne',sans-serif;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#3A3852;margin-bottom:5px}
+.hk{font-size:14px;font-weight:500;color:#F0EEF8;line-height:1.5}
+.st{font-size:13px;color:#D4D0E8;line-height:1.7;white-space:pre-wrap}
+.ct{font-size:13px;font-weight:500;color:#A78BFA;line-height:1.5}
+.rb{background:#0D0C18;border:1px solid #1E1C2E;border-radius:9px;padding:11px;margin-top:7px}
+.rl2{font-size:9px;font-family:'Syne',sans-serif;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#4ADE8050;margin-bottom:5px}
+.rg{font-size:11px;color:#4ADE80;line-height:1.6}
+.cprow{display:flex;justify-content:flex-end;margin-top:14px}
+.cpbtn{background:none;border:1px solid #1E1C2E;border-radius:7px;padding:6px 13px;color:#5C5A72;font-size:12px;cursor:pointer}
 .cpbtn.done{color:#4ADE80;border-color:#4ADE8040}
-.uwall{background:linear-gradient(135deg,#12111A,#1A1028);border:1px solid #8B5CF640;border-radius:14px;padding:28px;text-align:center;margin-top:16px}
-.uwall-icon{font-size:36px;margin-bottom:12px}
-.uwall h3{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:#F0EEF8;margin-bottom:8px}
-.uwall p{font-size:13px;color:#7B7893;line-height:1.6;margin-bottom:20px}
-.uwall-btn{padding:13px 28px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:12px;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#fff;cursor:pointer}
-@media(max-width:600px){.feats{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr}.gate-row{flex-direction:column}}
+.uw{background:linear-gradient(135deg,#12111A,#1A1028);border:1px solid #8B5CF640;border-radius:13px;padding:24px;text-align:center;margin-top:14px}
+.uw-i{font-size:32px;margin-bottom:10px}
+.uw h3{font-family:'Syne',sans-serif;font-size:17px;font-weight:800;color:#F0EEF8;margin-bottom:7px}
+.uw p{font-size:13px;color:#7B7893;line-height:1.6;margin-bottom:18px}
+.uwbtn{padding:12px 24px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);border:none;border-radius:11px;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#fff;cursor:pointer}
+@media(max-width:560px){.feats{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr}.grow{flex-direction:column}}
 </style>
 </head>
 <body>
 
 <!-- LANDING -->
-<div id="pg-landing">
+<div id="pg-land">
   <nav class="nav">
     <div class="logo">UGC<span>Studio</span></div>
-    <div class="nav-btns">
-      <button class="nbtn" id="btn-nav-code">J'ai un code</button>
-      <button class="nbtn pur" id="btn-nav-sub">S'abonner</button>
+    <div style="display:flex;gap:8px">
+      <button class="nbtn" onclick="goGate()">J'ai un code</button>
+      <button class="nbtn p" onclick="goPay()">S'abonner</button>
     </div>
   </nav>
   <div class="hero">
     <div class="badge"><span class="pulse"></span>Propulsé par IA</div>
     <h1>Scripts, cibles<br>&amp; emails en<br><span class="grad">30 secondes</span></h1>
     <p>Essaie gratuitement — 2 générations offertes sur chaque outil. Aucun compte requis.</p>
-    <div class="hero-btns">
-      <button class="big-btn pur" id="btn-trial">🎁 Essayer gratuitement</button>
-      <button class="big-btn ghost" id="btn-code-hero">J'ai déjà un code →</button>
-    </div>
+    <button class="bbtn p" onclick="goTrial()">🎁 Essayer gratuitement</button>
+    <button class="bbtn g" onclick="goGate()">J'ai déjà un code →</button>
     <div class="pcard">
-      <div style="text-align:center;margin-bottom:6px">
-        <span class="price-cur">€</span><span class="price">5</span>
+      <div class="prc">
+        <div><span class="cur">€</span><span class="amt">5</span></div>
+        <div class="per">par mois · sans engagement</div>
       </div>
-      <div class="period">par mois · sans engagement · résiliable à tout moment</div>
-      <ul class="flist">
-        <li><span class="fcheck">✓</span>Scripts UGC illimités</li>
-        <li><span class="fcheck">✓</span>Analyse de cible illimitée</li>
-        <li><span class="fcheck">✓</span>Emails B2B illimités</li>
-        <li><span class="fcheck">✓</span>Prompts Runway ML &amp; Kling AI</li>
-        <li><span class="fcheck">✓</span>Accès immédiat après paiement</li>
+      <ul class="fl">
+        <li><span class="fck">✓</span>Scripts UGC illimités</li>
+        <li><span class="fck">✓</span>Analyse de cible illimitée</li>
+        <li><span class="fck">✓</span>Emails B2B illimités</li>
+        <li><span class="fck">✓</span>Prompts Runway ML &amp; Kling AI</li>
+        <li><span class="fck">✓</span>Accès immédiat après paiement</li>
       </ul>
-      <button class="sub-btn" id="btn-sub-card">💳 S'abonner — 3 280 FCFA/mois</button>
-      <div class="pay-note">🔒 PayDunya · Flooz · T-Money · Carte CB</div>
+      <button class="sbtn" onclick="goPay()">💳 S'abonner — 3 280 FCFA/mois</button>
+      <div class="pnote">🔒 PayDunya · Flooz · T-Money · Carte CB</div>
     </div>
   </div>
   <div class="feats">
-    <div class="fc"><div class="fc-icon">🎬</div><div class="fc-title">Scripts UGC</div><div class="fc-desc">Hook, B-roll, voix off, CTA et prompt IA.</div></div>
-    <div class="fc"><div class="fc-icon">🎯</div><div class="fc-title">Analyse de cible</div><div class="fc-desc">Profil détaillé : besoins, douleurs, comportements.</div></div>
-    <div class="fc"><div class="fc-icon">📧</div><div class="fc-title">Emails B2B</div><div class="fc-desc">Emails de prospection personnalisés.</div></div>
+    <div class="fc"><div class="fc-i">🎬</div><div class="fc-t">Scripts UGC</div><div class="fc-d">Hook, B-roll, voix off, CTA et prompt IA.</div></div>
+    <div class="fc"><div class="fc-i">🎯</div><div class="fc-t">Analyse de cible</div><div class="fc-d">Profil détaillé de ton audience idéale.</div></div>
+    <div class="fc"><div class="fc-i">📧</div><div class="fc-t">Emails B2B</div><div class="fc-d">Emails de prospection personnalisés.</div></div>
   </div>
 </div>
 
 <!-- PAY MODAL -->
 <div id="pg-pay" class="overlay hidden">
   <div class="modal">
-    <button class="close" id="btn-pay-close">×</button>
-    <div id="pay-form">
+    <button class="xbtn" onclick="closePay()">×</button>
+    <div id="pay-f">
       <h2>Abonnement UGC Studio</h2>
-      <div class="modal-sub">3 280 FCFA/mois (~5€) · Sans engagement</div>
+      <div class="msub">3 280 FCFA/mois (~5€) · Sans engagement</div>
       <div id="pay-err" class="err hidden"></div>
-      <div class="fg"><label>Méthode</label>
-        <div class="methods">
-          <button class="mth on" id="m-flooz">Flooz</button>
-          <button class="mth" id="m-tmoney">T-Money</button>
-          <button class="mth" id="m-card">Carte CB</button>
+      <div class="fg" style="margin-bottom:8px"><label>Méthode</label>
+        <div class="meths">
+          <button class="mth on" id="m-f" onclick="selMeth('flooz',this)">Flooz</button>
+          <button class="mth" id="m-t" onclick="selMeth('tmoney',this)">T-Money</button>
+          <button class="mth" id="m-c" onclick="selMeth('card',this)">Carte CB</button>
         </div>
       </div>
       <div class="fg"><label>Nom complet</label><input id="p-name" placeholder="Ton nom"></div>
       <div class="fg"><label>Email</label><input id="p-email" type="email" placeholder="ton@email.com"></div>
       <div class="fg"><label>Téléphone</label><input id="p-phone" placeholder="+228 90 00 00 00"></div>
-      <button class="pay-go" id="btn-pay-go">Payer 3 280 FCFA →</button>
+      <button class="pgo" id="pay-go-btn" onclick="doPay()">Payer 3 280 FCFA →</button>
     </div>
-    <div id="pay-suc" class="suc hidden">
-      <div class="suc-icon">✅</div>
-      <div class="suc-title">Paiement initié !</div>
-      <p class="suc-sub">Une page de paiement s'est ouverte.<br>Après confirmation, tu recevras ton code par email.</p>
-      <button class="pay-go" id="btn-pay-suc-code">J'ai mon code → Accéder</button>
+    <div id="pay-s" class="suc hidden">
+      <div class="suc-i">✅</div>
+      <div class="suc-t">Paiement initié !</div>
+      <p class="suc-s">Une page de paiement s'est ouverte.<br>Après confirmation tu recevras ton code par email.</p>
+      <button class="pgo" onclick="closePay();goGate()">J'ai mon code → Accéder</button>
     </div>
   </div>
 </div>
 
 <!-- GATE -->
-<div id="pg-gate" class="gate-wrap hidden">
-  <div class="gate-card">
-    <div style="font-size:32px;margin-bottom:14px">🔑</div>
+<div id="pg-gate" class="gate-w hidden">
+  <div class="gate-c">
+    <div style="font-size:30px;margin-bottom:12px">🔑</div>
     <h2>Entre ton code d'accès</h2>
     <p>Tu as reçu ton code par email après ton paiement PayDunya.</p>
     <div id="gate-err" class="err hidden"></div>
-    <div class="gate-row">
-      <input class="gate-inp" id="gate-inp" placeholder="XXXX-XXXX-XXXX">
-      <button class="gate-go" id="btn-gate-go">Accéder →</button>
+    <div class="grow">
+      <input class="ginp" id="g-inp" placeholder="XXXX-XXXX-XXXX" onkeydown="if(event.key==='Enter')doGate()">
+      <button class="ggo" onclick="doGate()">Accéder →</button>
     </div>
-    <button class="link-btn" id="btn-gate-back">← Retour à l'accueil</button>
+    <button class="lbtn" onclick="goLand()">← Retour à l'accueil</button>
   </div>
 </div>
 
 <!-- APP -->
 <div id="pg-app" class="hidden">
-  <div class="app-wrap">
-    <div class="app-top">
-      <div class="app-logo">UGC<span>Studio</span></div>
-      <div class="app-right">
-        <span class="credits hidden" id="credits-lbl"></span>
-        <button class="up-btn hidden" id="btn-upgrade">🔓 S'abonner 5€/mois</button>
-        <button class="quit-btn" id="btn-quit">Quitter</button>
+  <div class="aw">
+    <div class="atop">
+      <div class="alogo">UGC<span>Studio</span></div>
+      <div class="aright">
+        <span class="cred hidden" id="cred-lbl"></span>
+        <button class="upbtn hidden" id="up-btn" onclick="goPay()">🔓 S'abonner 5€/mois</button>
+        <button class="qbtn" onclick="doQuit()">Quitter</button>
       </div>
     </div>
     <div class="tabs">
-      <button class="tab on" id="tab-scripts">🎬 Scripts UGC</button>
-      <button class="tab" id="tab-cible">🎯 Analyse de cible</button>
-      <button class="tab" id="tab-email">📧 Email B2B</button>
+      <button class="tab on" onclick="switchTab('scripts',this)">🎬 Scripts UGC</button>
+      <button class="tab" onclick="switchTab('cible',this)">🎯 Analyse de cible</button>
+      <button class="tab" onclick="switchTab('email',this)">📧 Email B2B</button>
     </div>
 
-    <!-- SCRIPTS PANEL -->
-    <div class="panel on" id="panel-scripts">
-      <div class="ptitle">Génère ton<br><span>script vidéo</span></div>
-      <p class="psub">2 variantes A/B avec hook, B-roll, voix off, CTA et prompt Runway ML.</p>
+    <!-- SCRIPTS -->
+    <div class="panel on" id="pnl-scripts">
+      <div class="pt">Génère ton<br><span>script vidéo</span></div>
+      <p class="ps">2 variantes A/B avec hook, B-roll, voix off, CTA et prompt Runway ML.</p>
       <div class="fcard">
         <div class="fgrid">
-          <div class="fi full"><label>Produit / Marque *</label><input id="s-produit" placeholder="ex: Parfum Rose Noir, Restaurant Chez Momo…"></div>
-          <div class="fi"><label>Secteur</label><select id="s-secteur"><option value="">Choisir…</option><option>Restaurant / Food</option><option>Mode / Vêtements</option><option>Parfum / Beauté</option><option>Tech / App</option><option>Sport / Fitness</option><option>Lifestyle</option><option>Autre</option></select></div>
-          <div class="fi"><label>Audience</label><input id="s-audience" placeholder="ex: femmes 25-35…"></div>
-          <div class="fi"><label>Plateforme</label><div class="togs" id="tg-plat"><button class="tog on">TikTok</button><button class="tog">Instagram Reels</button><button class="tog">Facebook</button></div></div>
-          <div class="fi"><label>Durée</label><div class="togs" id="tg-dur"><button class="tog">15s</button><button class="tog on">30s</button><button class="tog">60s</button></div></div>
-          <div class="fi full"><label>Ton</label><div class="togs" id="tg-ton"><button class="tog on">Émotionnel</button><button class="tog">Humoristique</button><button class="tog">Urgent</button><button class="tog">Inspirant</button><button class="tog">Éducatif</button></div></div>
-          <div class="fi full"><label>Infos (optionnel)</label><textarea id="s-info" placeholder="Promo, USP du produit…"></textarea></div>
+          <div class="fi full"><label>Produit / Marque *</label><input id="s-prod" placeholder="ex: Parfum Rose Noir, Restaurant Chez Momo…"></div>
+          <div class="fi"><label>Secteur</label><select id="s-sec"><option value="">Choisir…</option><option>Restaurant / Food</option><option>Mode / Vêtements</option><option>Parfum / Beauté</option><option>Tech / App</option><option>Sport / Fitness</option><option>Lifestyle</option><option>Autre</option></select></div>
+          <div class="fi"><label>Audience</label><input id="s-aud" placeholder="ex: femmes 25-35…"></div>
+          <div class="fi"><label>Plateforme</label><div class="togs" id="tg-pl"><button class="tog on" onclick="tog('tg-pl',this)">TikTok</button><button class="tog" onclick="tog('tg-pl',this)">Instagram Reels</button><button class="tog" onclick="tog('tg-pl',this)">Facebook</button></div></div>
+          <div class="fi"><label>Durée</label><div class="togs" id="tg-du"><button class="tog" onclick="tog('tg-du',this)">15s</button><button class="tog on" onclick="tog('tg-du',this)">30s</button><button class="tog" onclick="tog('tg-du',this)">60s</button></div></div>
+          <div class="fi full"><label>Ton</label><div class="togs" id="tg-to"><button class="tog on" onclick="tog('tg-to',this)">Émotionnel</button><button class="tog" onclick="tog('tg-to',this)">Humoristique</button><button class="tog" onclick="tog('tg-to',this)">Urgent</button><button class="tog" onclick="tog('tg-to',this)">Inspirant</button><button class="tog" onclick="tog('tg-to',this)">Éducatif</button></div></div>
+          <div class="fi full"><label>Infos (optionnel)</label><textarea id="s-inf" placeholder="Promo, USP…"></textarea></div>
         </div>
-        <button class="go-btn" id="s-go">Générer 2 scripts A/B →</button>
+        <button class="gobtn" id="s-go" onclick="genScript()">Générer 2 scripts A/B →</button>
       </div>
-      <div class="spin-wrap hidden" id="s-spin"><div class="spin"></div>Création des scripts…</div>
+      <div class="spw hidden" id="s-sp"><div class="sp"></div>Création…</div>
       <div class="hidden" id="s-res">
-        <div class="rhead"><div class="
+        <div class="rh"><div class="rl">Scripts générés</div><button class="nbtn2" onclick="hide('s-res')">Nouveau</button></div>
+        <div class="sc">
